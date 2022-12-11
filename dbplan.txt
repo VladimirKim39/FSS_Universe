@@ -1,7 +1,7 @@
 
-Database will consist of multiple tables.
+Database will of following tables.
 
-#1 "Planets" :
+#1 "Planets" (min 12 rows) :
 
 - ID (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
@@ -18,3 +18,22 @@ Database will consist of multiple tables.
 
 
 
+
+#2 "Stars" (min 6 rows):
+
+- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- Name (VARCHAR20)
+-
+-
+
+#3 "Galaxy" (min 6 rows):
+
+- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- Name (VARCHAR20)
+-
+-
+
+#4 "Moon" (min 20 rows):
+
+- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- Name (VARCHAR20)
