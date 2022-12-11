@@ -1,0 +1,20 @@
+
+Database will consist of multiple tables.
+
+#1 "Planets" :
+
+- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- Name (VARCHAR20)
+- Type by composition (varchar20)
+- Number of Moons (int)
+- Star (int references table stars)
+- Mass (10^24 kg) (float)
+- Diameter (km) (float)
+- Density (kg/m^3) (float)
+- Gravity (m/s^2) (float)
+- Length of day Rnd. (hours) (int)
+- Mean Temperature (Float)
+- Habitability (Boolean)
+
+
+
