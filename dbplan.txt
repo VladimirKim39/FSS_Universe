@@ -1,13 +1,14 @@
 
-Database will of following tables.
+Database will consist of the following tables.
 
 #1 "Planets" (min 12 rows) :
 
 - ID (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
-- Type by composition (varchar20)
+- Planet Type (varchar20)
 - Number of Moons (int)
-- Star (int references table stars)
+- Star System (int) [Foreign key to "Stars" Table, ID column]
+- Age (float)
 - Mass (10^24 kg) (float)
 - Diameter (km) (float)
 - Density (kg/m^3) (float)
@@ -23,8 +24,15 @@ Database will of following tables.
 
 - ID (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
--
--
+- Galaxy (TXT) [Foreign key to "Galaxy" Table, ID column]
+- Age (float)
+- Mass (10^24 kg) (float)
+- Diameter (km) (float)
+- Density (kg/m^3) (float)
+- Gravity (m/s^2) (float)
+- Mean Temperature (Float)
+
+
 
 #3 "Galaxy" (min 6 rows):
 
