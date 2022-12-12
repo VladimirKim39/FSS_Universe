@@ -3,11 +3,11 @@ Database will consist of the following tables.
 
 #1 "Moon" (min 20 rows):
 
-- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- moon_id (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
 - Planet Type (varchar20)
 - Number of Moons (int)
-- Orbiting (int NOT NULL) [Foreign key to "Planet" Table, ID column]
+- planet_id (int NOT NULL) [Foreign key to "Planet" Table, ID column]
 - Age (float)
 - Mass (10^24 kg) (float)
 - Diameter (km) (float)
@@ -19,11 +19,11 @@ Database will consist of the following tables.
 
 #2 "Planet" (min 12 rows) :
 
-- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- planet_id (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
 - Planet Type (varchar20)
 - Number of Moons (int)
-- Star System (int NOT NULL) [Foreign key to "Stars" Table, ID column]
+- star_id (int NOT NULL) [Foreign key to "Stars" Table, ID column]
 - Age (float)
 - Mass (10^24 kg) (float)
 - Diameter (km) (float)
@@ -37,9 +37,9 @@ Database will consist of the following tables.
 
 #3 "Star" (min 6 rows):
 
-- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- star_id (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
-- Galaxy (int NOT NULL) [Foreign key to "Galaxy" Table, ID column]
+- galaxy_id (int NOT NULL) [Foreign key to "Galaxy" Table, ID column]
 - Age (float)
 - Mass (10^24 kg) (float)
 - Diameter (km) (float)
@@ -52,24 +52,14 @@ Database will consist of the following tables.
 
 #4 "Galaxy" (min 6 rows):
 
-- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- galaxy_id (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
+- Type (varchar20)
+- Grouping (varchar20)
+- Number of Stars (varchar20)
 - Age (float)
 - Mass (10^24 kg) (float)
 - Diameter (km) (float)
-- Density (kg/m^3) (float)
-- Gravity (m/s^2) (float)
-- Rotation (hours) (Float)
-- Mean Temperature (Float)
-
-
-
-
-
-
-
-
-
 
 
 
