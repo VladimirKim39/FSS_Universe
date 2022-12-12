@@ -1,7 +1,23 @@
 
 Database will consist of the following tables.
 
-#1 "Planet" (min 12 rows) :
+#1 "Moon" (min 20 rows):
+
+- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- Name (VARCHAR20)
+- Planet Type (varchar20)
+- Number of Moons (int)
+- Orbiting (int NOT NULL) [Foreign key to "Planet" Table, ID column]
+- Age (float)
+- Mass (10^24 kg) (float)
+- Diameter (km) (float)
+- Density (kg/m^3) (float)
+- Gravity (m/s^2) (float)
+- Rotation (hours) (Float)
+- Mean Temperature (Float)
+- Habitability (Boolean)
+
+#2 "Planet" (min 12 rows) :
 
 - ID (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
@@ -13,14 +29,13 @@ Database will consist of the following tables.
 - Diameter (km) (float)
 - Density (kg/m^3) (float)
 - Gravity (m/s^2) (float)
-- Length of day Rnd. (hours) (int)
+- Rotation (hours) (Float)
 - Mean Temperature (Float)
 - Habitability (Boolean)
 
 
 
-
-#2 "Star" (min 6 rows):
+#3 "Star" (min 6 rows):
 
 - ID (INT NOT NULL UNIQUE PRIMARY KEY)
 - Name (VARCHAR20)
@@ -30,19 +45,39 @@ Database will consist of the following tables.
 - Diameter (km) (float)
 - Density (kg/m^3) (float)
 - Gravity (m/s^2) (float)
+- Rotation (hours) (Float)
+- Mean Temperature (Float)
+
+
+
+#4 "Galaxy" (min 6 rows):
+
+- ID (INT NOT NULL UNIQUE PRIMARY KEY)
+- Name (VARCHAR20)
+- Age (float)
+- Mass (10^24 kg) (float)
+- Diameter (km) (float)
+- Density (kg/m^3) (float)
+- Gravity (m/s^2) (float)
+- Rotation (hours) (Float)
 - Mean Temperature (Float)
 
 
 
 
-#3 "Galaxy" (min 6 rows):
 
-- ID (INT NOT NULL UNIQUE PRIMARY KEY)
-- Name (VARCHAR20)
--
--
 
-#4 "Moon" (min 20 rows):
 
-- ID (INT NOT NULL UNIQUE PRIMARY KEY)
-- Name (VARCHAR20)
+
+
+
+
+
+
+
+
+
+
+
+
+
