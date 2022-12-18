@@ -45,7 +45,7 @@ Database will consist of the following tables.
 - Density (kg/m^3) (float)
 - Gravity (m/s^2) (float)
 - Rotation (hours) (Float)
-- Mean Temperature (Float)
+- Mean Temperature (million Celsius) (Float) 
 
 
 
@@ -56,9 +56,9 @@ Database will consist of the following tables.
 - Type (varchar20)
 - Grouping (varchar20)
 - Number of Stars (varchar20)
-- Age (float)
-- Mass (10^24 kg) (float)
-- Diameter (km) (float)
+- Age (billion year) (float)
+- Mass (10^12 M.) (float)
+- Diameter (light years) (float)
 
 
 
